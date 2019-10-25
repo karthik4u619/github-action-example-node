@@ -23,7 +23,7 @@ jobs:
         with:
           args: build -t karthik4u619/github-action-example-node .
       - name: docker login
-        uses: actions/docker/login@master
+        uses: actions/docker/login-package-registry@master
         env:
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
